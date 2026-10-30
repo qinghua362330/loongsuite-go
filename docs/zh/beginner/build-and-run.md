@@ -21,7 +21,7 @@ otel go build -o demo .
 
 `otel` 不会在程序运行时改代码。它在构建时把观察代码加进去，之后运行的是**已经包含观察代码的程序**。
 
-![动画：构建时与运行时](/beginner/build-zh.svg)
+[![动画：构建时与运行时](/beginner/build-zh.svg)](/beginner/build-zh.svg)
 
 ## otel 在构建中做了什么
 

@@ -21,7 +21,7 @@ otel go build -o demo .
 
 `otel` doesn't change code while the program runs. It adds observation code at build time, and what runs afterwards is **a program that already contains the observation code**.
 
-![Animation: build time and run time](/beginner/build-en.svg)
+[![Animation: build time and run time](/beginner/build-en.svg)](/beginner/build-en.svg)
 
 ## What otel does during the build
 

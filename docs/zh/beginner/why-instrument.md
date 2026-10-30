@@ -24,7 +24,7 @@ fmt.Println("FindRoom took", time.Since(start))
 
 `FindRoom` 仍然负责查房间，新增的代码只负责记录它是怎样执行的。
 
-![动画：给 FindRoom 加上前后观察动作](/beginner/observe-zh.svg)
+[![动画：给 FindRoom 加上前后观察动作](/beginner/observe-zh.svg)](/beginner/observe-zh.svg)
 
 ## 名词
 

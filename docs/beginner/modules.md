@@ -30,7 +30,7 @@ func main() {
 
 An `import` path is the package's full path, not "the folder next to me". From `module example.com/demo` in `go.mod`, Go knows that this prefix maps to the `demo/` directory containing `go.mod`. Removing the prefix from the full path leaves `room`, so Go finds `demo/room/`.
 
-![Animation: how Go resolves an import path to room/](/beginner/packages-en.svg)
+[![Animation: how Go resolves an import path to room/](/beginner/packages-en.svg)](/beginner/packages-en.svg)
 
 ## Three lines of go.mod
 
@@ -50,10 +50,10 @@ require example.com/observer v1.0.0
 
 `require` only declares a version requirement. It is not a function call, and it doesn't add any behavior to your functions. **`go.mod` only helps Go find code; what the code does is decided by the calls.**
 
-![Animation: module and require in one go.mod](/beginner/gomod-en.svg)
+[![Animation: module and require in one go.mod](/beginner/gomod-en.svg)](/beginner/gomod-en.svg)
 
 Further reading: [How to Write Go Code](https://go.dev/doc/code)
 
-**Interactive version**: to step through the animation frame by frame and try the exercises, open [step 2 in the community-maintained LoongSuite Go Guide](https://qinghua362330.github.io/loongsuite-go-guide/#/start/2) (Chinese).
+**Interactive version**: the community-maintained LoongSuite Go Guide has [step 2: packages and modules](https://qinghua362330.github.io/loongsuite-go-guide/#/start/2) and [step 3: go.mod](https://qinghua362330.github.io/loongsuite-go-guide/#/start/3), with step-by-step diagrams and exercises (Chinese).
 
 Next: [Build Time and Run Time](./build-and-run.md)

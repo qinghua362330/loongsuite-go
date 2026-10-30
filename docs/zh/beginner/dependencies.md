@@ -66,7 +66,7 @@ room-42
 
 原来的返回值不变，只是多了一条观察记录。
 
-![动画：多了一行调用，为什么编译不过](/beginner/deps-zh.svg)
+[![动画：多了一行调用，为什么编译不过](/beginner/deps-zh.svg)](/beginner/deps-zh.svg)
 
 ## 回到 otel
 

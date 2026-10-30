@@ -37,7 +37,7 @@
 
 原函数体不变，只是在前后多了两次调用。真实实现中，工具会在原函数入口插入一小段跳转代码，经过一个生成的中间函数（trampoline）再调用 hook，详见[埋点阶段](../hacking/instrument.md)。
 
-![动画：规则找位置，hook 做动作](/beginner/hooks-zh.svg)
+[![动画：规则找位置，hook 做动作](/beginner/hooks-zh.svg)](/beginner/hooks-zh.svg)
 
 ## 记住分工
 

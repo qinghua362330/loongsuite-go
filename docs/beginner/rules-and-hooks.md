@@ -37,7 +37,7 @@ call RoundTrip                call RoundTrip
 
 The original body is unchanged; there are just two extra calls around it. In the real implementation, the tool inserts a small jump at the entry of the original function, which goes through a generated function (the trampoline) before calling the hook. See [Instrument Phase](../hacking/instrument.md).
 
-![Animation: the rule finds the place, hooks do the work](/beginner/hooks-en.svg)
+[![Animation: the rule finds the place, hooks do the work](/beginner/hooks-en.svg)](/beginner/hooks-en.svg)
 
 ## Who does what
 

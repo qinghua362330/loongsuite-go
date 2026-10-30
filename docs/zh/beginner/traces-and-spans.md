@@ -18,7 +18,7 @@ HTTP 请求          Trace=A  Span=01
 
 只看相同的 Trace ID，无法知道调用顺序；要沿着 Parent 才能还原调用关系。（`A`、`01` 等是便于阅读的简化编号，真实 ID 是随机生成的十六进制字符串。）
 
-![动画：把同一次请求的记录连成调用树](/beginner/trace-zh.svg)
+[![动画：把同一次请求的记录连成调用树](/beginner/trace-zh.svg)](/beginner/trace-zh.svg)
 
 ## 父 Span 从哪里来
 

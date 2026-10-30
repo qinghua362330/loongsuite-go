@@ -24,7 +24,7 @@ fmt.Println("FindRoom took", time.Since(start))
 
 `FindRoom` still looks up the room. The new lines only record how it ran.
 
-![Animation: adding observation around FindRoom](/beginner/observe-en.svg)
+[![Animation: adding observation around FindRoom](/beginner/observe-en.svg)](/beginner/observe-en.svg)
 
 ## Terms
 

@@ -66,7 +66,7 @@ room-42
 
 The original return value is unchanged; there's just one extra observation record.
 
-![Animation: one more call, why the build breaks](/beginner/deps-en.svg)
+[![Animation: one more call, why the build breaks](/beginner/deps-en.svg)](/beginner/deps-en.svg)
 
 ## Back to otel
 

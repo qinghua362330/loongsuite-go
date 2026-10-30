@@ -32,4 +32,6 @@ The [User Guide](../index.md) shows how to use `otel`, while the [Developer Guid
 
 ## Interactive version
 
-Pages 1 to 6 include auto-playing diagrams. To step through them frame by frame and try exercises, use the community-maintained [LoongSuite Go Guide](https://qinghua362330.github.io/loongsuite-go-guide/) (Chinese), whose steps match this guide.
+Pages 1–6 include seven looping diagrams; page 2 has separate diagrams for packages and for go.mod. Click an image to view it at full size on a small screen. Reduced-motion and print modes show the final stage; the full sequence is also explained in the text.
+
+To step through diagrams and try exercises, use the community-maintained [LoongSuite Go Guide](https://qinghua362330.github.io/loongsuite-go-guide/) (Chinese). Each page links to the relevant lesson; page 7 links to the hands-on labs.

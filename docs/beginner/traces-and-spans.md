@@ -18,7 +18,7 @@ HTTP request        Trace=A  Span=01
 
 The same Trace ID alone doesn't give you the call order; you follow the parents to rebuild the call relationships. (`A`, `01` and so on are simplified for reading; real IDs are random hexadecimal strings.)
 
-![Animation: linking records of one request into a tree](/beginner/trace-en.svg)
+[![Animation: linking records of one request into a tree](/beginner/trace-en.svg)](/beginner/trace-en.svg)
 
 ## Where the parent comes from
 
