@@ -14,6 +14,15 @@ Before starting, [install `otel`](../index.md#installation) and make sure `otel 
 
 ## 1. Directory layout
 
+Create a new directory for this lab:
+
+```bash
+mkdir -p hooklab/rules
+cd hooklab
+```
+
+The tree below shows the completed lab. The root `go.mod` will be generated in step 2; `rules/go.mod` will be written in step 4. Do not create those files yet.
+
 ```text
 hooklab/
 ├── go.mod
@@ -135,7 +144,13 @@ go 1.25.0
 require github.com/alibaba/loongsuite-go/pkg v0.0.0-20260928033626-cac400935add
 ```
 
-Then run `go mod download github.com/alibaba/loongsuite-go/pkg` in `rules/` to create `go.sum`.
+From `hooklab/`, generate `rules/go.sum` with:
+
+```bash
+(cd rules && go mod download github.com/alibaba/loongsuite-go/pkg)
+```
+
+The parentheses keep the following commands in `hooklab/`.
 
 ## 5. Compare the two builds
 
@@ -149,7 +164,7 @@ plain-result 42 status 204
 Build with `otel`:
 
 ```bash
-$ otel set -disable= -rule=$PWD/rule.json
+$ otel set -disable= -rule="$PWD/rule.json"
 $ otel go build -o instrumented .
 $ ./instrumented
 ```

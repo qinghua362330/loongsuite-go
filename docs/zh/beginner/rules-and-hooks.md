@@ -22,7 +22,7 @@
 
 读作：在 `net/http` 包里找到接收者为 `*Transport` 的 `RoundTrip` 方法；进入时调用 `myOnEnter`，返回时调用 `myOnExit`；这两个函数的代码在 `./rules` 目录。
 
-`ReceiverType` 和 `Function` 按正则表达式匹配，所以 `*` 要写成 `\*`，在 JSON 字符串里再转义一次就是 `\\*`。全部字段见 [Hook 规则类型](../dev/rule_def.md)。
+本例中，`Function` 写确切的方法名 `RoundTrip`。`ReceiverType` 使用正则表达式：要匹配字面量 `*`，写成 `\*`，在 JSON 字符串里再转义一次就是 `\\*`。全部字段见 [Hook 规则类型](../dev/rule_def.md)。
 
 ## 插桩前后的执行路径
 

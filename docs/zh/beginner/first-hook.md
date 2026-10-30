@@ -14,6 +14,15 @@ next:
 
 ## 1. 准备目录
 
+新建一个目录用于本实验：
+
+```bash
+mkdir -p hooklab/rules
+cd hooklab
+```
+
+下面是完成实验后的目录结构。根目录的 `go.mod` 会在第 2 步生成，`rules/go.mod` 会在第 4 步编写，现在先不要创建它们。
+
 ```text
 hooklab/
 ├── go.mod
@@ -135,7 +144,13 @@ go 1.25.0
 require github.com/alibaba/loongsuite-go/pkg v0.0.0-20260928033626-cac400935add
 ```
 
-然后在 `rules/` 中执行 `go mod download github.com/alibaba/loongsuite-go/pkg` 生成 `go.sum`。
+然后在 `hooklab/` 中执行，生成 `rules/go.sum`：
+
+```bash
+(cd rules && go mod download github.com/alibaba/loongsuite-go/pkg)
+```
+
+括号让后续命令仍在 `hooklab/` 中执行。
 
 ## 5. 比较两次构建
 
@@ -149,7 +164,7 @@ plain-result 42 status 204
 使用 `otel` 构建：
 
 ```bash
-$ otel set -disable= -rule=$PWD/rule.json
+$ otel set -disable= -rule="$PWD/rule.json"
 $ otel go build -o instrumented .
 $ ./instrumented
 ```

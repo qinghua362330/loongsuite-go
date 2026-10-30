@@ -22,7 +22,7 @@ The tool splits the job into two parts:
 
 Read it as: in package `net/http`, find the `RoundTrip` method whose receiver is `*Transport`; call `myOnEnter` on entry and `myOnExit` on return; the code of these two functions is in the `./rules` directory.
 
-`ReceiverType` and `Function` are matched as regular expressions, so `*` is written as `\*`, which becomes `\\*` after escaping inside a JSON string. See [Hook Rule Types](../dev/rule_def.md) for all fields.
+Here, `Function` names the exact method, `RoundTrip`. `ReceiverType` is a regular expression: write the literal `*` as `\*`, which becomes `\\*` after escaping inside a JSON string. See [Hook Rule Types](../dev/rule_def.md) for all fields.
 
 ## Execution path before and after
 
